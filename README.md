@@ -37,9 +37,9 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 ### Prerequisites
 
 ```
-	+ +1.8.0_172 java. 						-> https://www.java.com/en/download/help/download_options.xml
-	+ Apache Maven +3.5.4 				 	-> https://maven.apache.org/install.html
-	+ Postman    (For Test)					-> https://www.getpostman.com/
+	+ +1.8.0_172 java.			-> https://www.java.com/en/download/help/download_options.xml
+	+ Apache Maven +3.5.4			-> https://maven.apache.org/install.html
+	+ Postman    (For Test)			-> https://www.getpostman.com/
   
 	Note: Some services have "Bearer Token" paramether requered, for use en Postman see the next 
 	link https://learning.getpostman.com/docs/postman/sending_api_requests/authorization/
@@ -67,33 +67,32 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 
  ### AuthControllerTest
  
-	+ testAuthPersonSuccess					-> Test if the validation of the credentials its correct
+	+ testAuthPersonSuccess				-> Test if the validation of the credentials its correct
 	+ testAuthPersonBadCredentials			-> Test if the validation of the credentials its correct, no credential
 	+ testAuthPersonInvalidCredentials		-> Test if the validation of the credentials its correct, invalid credential
 	
  ### FoodControllerTest
  
-	+ testGetAllFoodsSuccess				-> List and count all elements of foods
-	+ testAddFoodSuccess					-> Add a new Food
-	+ testAddFoodAccess						-> Check the Admin role access to add a new Food
-	+ testGetFoodByIdSuccess				-> Get one Food element by id 
-	+ testUpdateFoodSuccess					-> Upadte a Food element and check updated correct
-	+ testDeleteFoodByIdSuccess				-> Delete a Food element and check deleted correct
+	+ testGetAllFoodsSuccess			-> List and count all elements of foods
+	+ testAddFoodSuccess				-> Add a new Food
+	+ testAddFoodAccess				-> Check the Admin role access to add a new Food
+	+ testGetFoodByIdSuccess			-> Get one Food element by id 
+	+ testUpdateFoodSuccess				-> Upadte a Food element and check updated correct
+	+ testDeleteFoodByIdSuccess			-> Delete a Food element and check deleted correct
 	+ testSearchByNameFoodSuccess			-> Get one Food element by name
 	+ testSearchByTypeFoodSuccess			-> Get one Food element by Food Type
 	+ testSearchByDateAddedSuccess			-> Get one Food element by Date of create
 	
  ### PersonControllerTest
  
-	+ testPersonRegisterSuccess				-> Check if an User can register success
-	+ testGetAllPersonsSuccess				-> List and count all elements of Person
-	+ testGetPersonByIdSuccess				-> Get one Person element by id
-	+ testGetPersonByIdFail					-> Fail Get one Person element by wrong id
+	+ testPersonRegisterSuccess			-> Check if an User can register success
+	+ testGetAllPersonsSuccess			-> List and count all elements of Person
+	+ testGetPersonByIdSuccess			-> Get one Person element by id
+	+ testGetPersonByIdFail				-> Fail Get one Person element by wrong id
 
 	
-## Call Services	
 
- ### GetAll
+ ## Call GetAll Services
 	
 	Return a list of all the objects Food in the table.
 	Method 	: 				Get
@@ -123,7 +122,7 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 	Note: Return a empty list if dont find any element.
 	
 	
- ###GetFoodById
+ ## Call GetFoodById Services
  
 	Return a Food Object selected by id
 	Method 	: 				Get
@@ -172,7 +171,7 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 			}
 		```
 		
- ###CreateFood
+ ## Call CreateFood Services
  
 	Create a new Food in the db
 	Method 	: 				Post
