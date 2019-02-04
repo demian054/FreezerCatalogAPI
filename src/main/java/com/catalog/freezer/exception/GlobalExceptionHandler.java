@@ -84,7 +84,6 @@ public class GlobalExceptionHandler {
 	public @ResponseBody ResponseEntity<ExceptionDTO> handleJwtException(AccessDeniedException exception) {
 		ExceptionDTO details = new ExceptionDTO("token", null, exception.getMessage());
 		return ResponseEntity.status(HttpStatus.FORBIDDEN).body(details);
-	}
-	
+	}	
 	
 }

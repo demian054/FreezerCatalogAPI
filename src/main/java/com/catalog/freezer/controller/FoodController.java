@@ -52,7 +52,7 @@ public class FoodController {
     
     @GetMapping("/{foodId}")
     @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<Food> getFood(@PathVariable Long foodId) {
+    public ResponseEntity<Food> getFoodById(@PathVariable Long foodId) {
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(foodService.findById(foodId));
     }
