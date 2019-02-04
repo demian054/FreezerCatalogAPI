@@ -1,4 +1,4 @@
-# FreezerCatalogAPI 
+# FreezerCatalogAPI  https://travis-ci.org/demian054/FreezerCatalogAPI.svg?branch=master
 
 -Document version 0.1
  
