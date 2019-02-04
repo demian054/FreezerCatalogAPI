@@ -95,11 +95,11 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 ## Call GetAll Services
 	
 Return a list of all the objects Food in the table.
-Method 	: 				Get
-Authenticated : 		True (Bearer Token)
-Roll : 					User, Admin
-URL : 					/api/foods
-Accept Paginable		True
++ Method 	: 				Get
++ Authenticated : 		True (Bearer Token)
++ Roll : 					User, Admin
++ URL : 					/api/foods
++ Accept Paginable		True
 
 ## Request
 
