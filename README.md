@@ -92,47 +92,47 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 
 	
 
- # Call GetAll Services
+## Call GetAll Services
 	
-	Return a list of all the objects Food in the table.
-	Method 	: 				Get
-	Authenticated : 		True (Bearer Token)
-	Roll : 					User, Admin
-	URL : 					/api/foods
-	Accept Paginable		True
-	
-	## Request
+Return a list of all the objects Food in the table.
+Method 	: 				Get
+Authenticated : 		True (Bearer Token)
+Roll : 					User, Admin
+URL : 					/api/foods
+Accept Paginable		True
 
-	 - Parameter
-		+ foodId :				Id of the Food to search.
-	
-	Example:
-	```
-		http://localhost:8080/api/foods/1
-	```
-		
+## Request
 
-	## Response 
+ - Parameter
+	+ foodId :				Id of the Food to search.
+
+Example:
+```
+	http://localhost:8080/api/foods/1
+```
 	
-	Example
-	```
-		[
-			{
-				"createdAt": "2019-02-04T01:08:32.971+0000",
-				"updatedAt": "2019-02-04T01:08:32.971+0000",
-				"id": 1,
-				"name": "bread",
-				"quantity": 2,
-				"foodType": {
-					"createdAt": "2019-02-04T01:08:32.969+0000",
-					"updatedAt": "2019-02-04T01:08:32.969+0000",
-					"id": 10001,
-					"name": "fruit"
-				}
+
+## Response 
+
+Example
+```
+	[
+		{
+			"createdAt": "2019-02-04T01:08:32.971+0000",
+			"updatedAt": "2019-02-04T01:08:32.971+0000",
+			"id": 1,
+			"name": "bread",
+			"quantity": 2,
+			"foodType": {
+				"createdAt": "2019-02-04T01:08:32.969+0000",
+				"updatedAt": "2019-02-04T01:08:32.969+0000",
+				"id": 10001,
+				"name": "fruit"
 			}
-		]
-	```
-	Note: Return a empty list if dont find any element.
+		}
+	]
+```
+Note: Return a empty list if dont find any element.
 	
 	
  ## Call GetFoodById Services
