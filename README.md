@@ -68,8 +68,8 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
  ### AuthControllerTest
  
 	+ testAuthPersonSuccess				-> Test if the validation of the credentials its correct
-	+ testAuthPersonBadCredentials			-> Test if the validation of the credentials its correct, no credential
-	+ testAuthPersonInvalidCredentials		-> Test if the validation of the credentials its correct, invalid credential
+	+ testAuthPersonBadCredentials			-> Test if the validation without credential
+	+ testAuthPersonInvalidCredentials		-> Test if the validation with invalid credential
 	
  ### FoodControllerTest
  
@@ -92,7 +92,7 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 
 	
 
- ## Call GetAll Services
+ # Call GetAll Services
 	
 	Return a list of all the objects Food in the table.
 	Method 	: 				Get
@@ -101,7 +101,20 @@ testing purposes. See deployment for notes on how to deploy the project on a liv
 	URL : 					/api/foods
 	Accept Paginable		True
 	
-	Response json Example
+	## Request
+
+	 - Parameter
+		+ foodId :				Id of the Food to search.
+	
+	Example:
+	```
+		http://localhost:8080/api/foods/1
+	```
+		
+
+	## Response 
+	
+	Example
 	```
 		[
 			{
