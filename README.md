@@ -101,7 +101,7 @@ Return a list of all the objects Food in the table.
 + URL : 					/api/foods
 + Accept Paginable		True
 
-## Request
+### Request
 
  - Parameter
 	+ foodId :				Id of the Food to search.
@@ -112,7 +112,7 @@ Example:
 ```
 	
 
-## Response 
+### Response 
 
 Example
 ```
@@ -135,77 +135,74 @@ Example
 Note: Return a empty list if dont find any element.
 	
 	
- ## Call GetFoodById Services
+## Call GetFoodById Services
  
-	Return a Food Object selected by id
-	Method 	: 				Get
-	Authenticated : 		True (Bearer Token)
-	Roll : 					User, Admin
-	URL : 					/api/foods/{foodId}
-	Accept Paginable		false
+Return a Food Object selected by id
++ Method 	: 			Get
++ Authenticated : 		True (Bearer Token)
++ Roll : 				User, Admin
++ URL : 				/api/foods/{foodId}
+ + Accept Paginable		false
 	
-	#### Request
+### Request
 	
-		 - Parameter
-			+ foodId :				Id of the Food to search.
-		
-		Example:
-		```
-			http://localhost:8080/api/foods/1
-		```
+ - Parameters
+	+ foodId :				Id of the Food to search.
+	
+	Example:
+	```
+		http://localhost:8080/api/foods/1
+	```
 		
 
-	#### Response 
-	
-	
-		Example Success
-		```
-			{
-				"createdAt": "2019-02-04T03:11:05.653+0000",
-				"updatedAt": "2019-02-04T03:11:05.653+0000",
-				"id": 1,
-				"name": "bread",
-				"quantity": 2,
-				"foodType": {
-					"createdAt": "2019-02-04T03:11:05.653+0000",
-					"updatedAt": "2019-02-04T03:11:05.653+0000",
-					"id": 10001,
-					"name": "fruit"
-				}
-			}
-		```
+### Response 
 		
-		Response Error (if dont find the Food)
-		```
-			{
-				"resource": "5",
-				"value": "Food by id",
-				"message": "Food not found"
-			}
-		```
-		
- ## Call CreateFood Services
- 
-	Create a new Food in the db
-	Method 	: 				Post
-	Authenticated : 		True (Bearer Token)
-	Roll : 					Admin
-	URL : 					/api/foods
-	Accept Paginable		false
-		
-#### Request 
-	
-	Example
-	```
-		{
-			"name": "bread2",
-			"quantity": 2,
-			"foodType": {
-				"name": "fruit2"
-			}
+Example Success
+```
+	{
+		"createdAt": "2019-02-04T03:11:05.653+0000",
+		"updatedAt": "2019-02-04T03:11:05.653+0000",
+		"id": 1,
+		"name": "bread",
+		"quantity": 2,
+		"foodType": {
+			"createdAt": "2019-02-04T03:11:05.653+0000",
+			"updatedAt": "2019-02-04T03:11:05.653+0000",
+			"id": 10001,
+			"name": "fruit"
 		}
-	```
-	Note: The name of the food need to be unique, and the FoodType is created in case than dont exist
+	}
+```
+	
+Response Error (if dont find the Food)
+```
+	{
+		"resource": "5",
+		"value": "Food by id",
+		"message": "Food not found"
+	}
+```
+	
+## Call CreateFood Services
+ 
++ Create a new Food in the db
++ Method 	: 			Post
++ Authenticated : 		True (Bearer Token)
++ Roll : 				Admin
++ URL : 				/api/foods
++ Accept Paginable		false
+		
+Request Example
+```
+	{
+		"name": "bread2",
+		"quantity": 2,
+		"foodType": {
+			"name": "fruit2"
+		}
+	}
+```
+Note: The name of the food need to be unique, and the FoodType is created in case than dont exist
 	
 	
 #### Response 
@@ -230,7 +227,7 @@ Note: Return a empty list if dont find any element.
 	
 ## Authors
 
-* **Demian Bolivar** - *Initial work* - [PurpleBooth](https://github.com/demian054/FreezerCatalogAPI)
+* **Demian Bolivar** - *Initial work* - [FreezerCatalogAPI](https://github.com/demian054/FreezerCatalogAPI)
 
 ## License
 
