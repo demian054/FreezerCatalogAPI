@@ -205,24 +205,53 @@ Request Example
 Note: The name of the food need to be unique, and the FoodType is created in case than dont exist
 	
 	
-#### Response 
+### Response 
 
-	Example
-	```
-	{
-		"createdAt": "2019-02-04T03:23:14.360+0000",
-		"updatedAt": "2019-02-04T03:23:14.360+0000",
-		"id": 2,
-		"name": "bread2",
-		"quantity": 2,
-		"foodType": {
-			"createdAt": "2019-02-04T03:23:14.324+0000",
-			"updatedAt": "2019-02-04T03:23:14.324+0000",
-			"id": 10005,
-			"name": "fruit2"
-		}
+Example
+```
+{
+	"createdAt": "2019-02-04T03:23:14.360+0000",
+	"updatedAt": "2019-02-04T03:23:14.360+0000",
+	"id": 2,
+	"name": "bread2",
+	"quantity": 2,
+	"foodType": {
+		"createdAt": "2019-02-04T03:23:14.324+0000",
+		"updatedAt": "2019-02-04T03:23:14.324+0000",
+		"id": 10005,
+		"name": "fruit2"
 	}
-	```
+}
+```
+
+
+
+## Call Search Services
+... doc in contruction ...
+
+## Call updateFood Services
+... doc in contruction ...
+
+## Call deleteFood Services
+... doc in contruction ...
+
+
+
+## Call signin Services
+... doc in contruction ...
+
+
+
+## Call register Services
+... doc in contruction ...
+
+## Call getAllPersons Services
+... doc in contruction ...
+
+## Call getPersonById Services
+... doc in contruction ...
+
+
 	
 	
 ## Authors
